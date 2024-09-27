@@ -1,0 +1,111 @@
+div{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.transition1:hover {
+    background-color: lightblue;
+    transform: translateX(100px);
+    color: red;
+    padding-top: cursive;
+}
+
+.transition2:hover {
+    font-size: 24px;
+    opacity: 0.5;
+    font-style: oblique;
+    height: 100px;
+    padding-top: 40px;
+}
+
+.transition3:hover {
+    transform: translateX(100px);
+    color: red;
+    padding-top: cursive;
+    width: 400px;
+    color: blue;
+}
+
+.transition4:hover {
+    opacity: 0.5;
+    font-style: oblique;
+    height: 100px;
+    padding-top: 40px;
+    transform: rotate(45deg);
+}
+
+.transition5:hover {
+    color: red;
+    padding-top: cursive;
+    width: 400px;
+    color: blue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.transition6:hover {
+    height: 200px;
+    padding-top: 40px;
+    transform: rotate(45deg);
+    transform: scale(1.5);
+}
+
+.transition7:hover {
+    background-color: lightblue;
+    width: 400px;
+    color: blue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.transition8:hover {
+    font-size: 24px;
+    transform: rotate(45deg);
+    transform: scale(1.5);
+}
+
+.transition9:hover {
+    transform: translateX(100px);
+    width: 400px;
+    color: blue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.transition10:hover {
+    opacity: 0.5;
+    font-style: oblique;
+    transform: rotate(45deg);
+    transform: scale(1.5);
+}
+
+
+@keyframes backgroundChange{
+    0%{background-color: white;}
+    25%{background-color: greenyellow;}
+    50%{background-color: green;}
+    75%{background-color: greenyellow}
+    100%{background-color: white;}
+}
+
+.animation1{
+    animation: backgroundChange 3s infinite;
+}
+
+@keyframes fontSizeChange {
+    0%{font-size: 16px;}
+    50%{font-size: 24px;}
+    100% { font-size: 16px}
+}
+
+.animation2{
+    animation: fontSizeChange 2s infinite;
+}
+
+@keyframes moveRight {
+    0% { transform: translateX(0);}
+    50% { transform: translateX(100px);}
+    100% { transform: translateX(0);}
+}
